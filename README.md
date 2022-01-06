@@ -16,7 +16,6 @@ Installation
 * Clone this repo:
 ```
 git clone https://github.com/YaN9-Y/FRLIE
-
 ```
 * Install Pytorch
 * Install python requirements:
