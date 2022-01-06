@@ -1,0 +1,46 @@
+MODE: 1             # 1: train, 2: test, 3: eval
+MODEL: 1            # 2: train the inpaint model 3: load transformer, train encoder and decoder 5: train transformer 6: train reconstructor 
+SEED: 10            # random seed
+GPU: [0]            # list of gpu ids
+DEBUG: 0            # turns on debugging mode
+VERBOSE: 0          # turns on verbose mode in the output console
+
+TRAIN_CLEAN_FLIST:
+TRAIN_NOISY_FLIST:
+TEST_CLEAN_FLIST: 
+TEST_NOISY_FLIST: ./datasets/quick_test.flist
+
+LR: 0.0002 
+LR_STAGE3: 0.000002                   # learning rate
+D2G_LR: 0.1                   # discriminator/generator learning rate ratio
+BETA1: 0.5                    # adam optimizer beta1
+BETA2: 0.9                    # adam optimizer beta2
+BATCH_SIZE: 16                 # input batch size for training
+CROP_SIZE: 192               # input image size for training 0 for original size
+SIGMA: 50                      # standard deviation of the Gaussian filter used in Canny edge detector (0: random, -1: no edge)
+MAX_ITERS: 1000001                # maximum number of iterations to train the model
+BASE_CHANNEL_NUM: 32
+BLOCK_NUM: 4
+HAS_GT: 0
+
+PSNR: RGB
+L1_LOSS_WEIGHT: 1             # l1 loss weight
+CONTENT_LOSS_WEIGHT: 0.1      # perceptual loss weight
+INPAINT_ADV_LOSS_WEIGHT: 0.1  # adversarial loss weight
+
+TRANSFORMER_REPAIRED_FEATURE_LOSS_WEIGHT: 1
+TRANSFORMER_PROCESSED_FEATURE_LOSS_WEIGHT: 1
+TRANSFORMER_PERCEPTUAL_LOSS_WEIGHT: 0.1
+TRANSFORMER_RESULT_LOSS_WEIGHT: 100
+TRANSFORMER_DECODE_LOSS_WEIGHT: 0.5
+TRANSFORMER_SSIM_LOSS_WEIGHT: 0
+TRANSFORMER_TV_LOSS_WEIGHT: 0.1
+
+GAN_LOSS: lsgan               # nsgan | lsgan | hinge
+GAN_POOL_SIZE: 0              # fake images pool size
+
+SAVE_INTERVAL: 4000           # how many iterations to wait before saving model (0: never)
+SAMPLE_INTERVAL: 4000        # how many iterations to wait before sampling (0: never)
+SAMPLE_SIZE: 4               # number of images to sample
+EVAL_INTERVAL: 3000              # how many iterations to wait before model evaluation (0: never)
+LOG_INTERVAL: 100              # how many iterations to wait before logging training status (0: never)
