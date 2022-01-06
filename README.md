@@ -2,7 +2,7 @@ FRLIE: Low-light Image Enhancement via Feature Restoration
 =================================
 This is the PyTorch implementation of paper FRLIE: Low-light Image Enhancement via Feature Restoration
 
-![image](examples/37.jpg){:height="30%" width="30%"} ![image](examples/37_high.png){:height="30%" width="30%"}
+![image](examples/37.jpg =366x240) ![image](examples/37_high.png =366x240)
 
 Prerequisites
 ---------------------------------
