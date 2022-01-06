@@ -1,8 +1,6 @@
-numpy ~= 1.14.3
-scipy ~= 1.0.1
-future ~= 0.16.0
-matplotlib ~= 2.2.2
-pillow ~= 5.0.0
-opencv-python ~= 3.4.0
-scikit-image ~= 0.14.0
-pyaml
+imageio==2.9.0
+matplotlib==3.2.2
+numpy==1.18.5
+scikit_image==0.16.2
+torch==1.7.1
+torchvision==0.8.2
