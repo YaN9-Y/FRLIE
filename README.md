@@ -40,5 +40,6 @@ If you find our paper useful or used our code, please consider citing:
   title={Low-Light Image Enhancement via Feature Restoration}, 
   year={2022},
   pages={2440-2444},
-  doi={10.1109/ICASSP43922.2022.9747174}}
+  doi={10.1109/ICASSP43922.2022.9747174}
+  }
 ```
