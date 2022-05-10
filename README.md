@@ -30,4 +30,3 @@ python3 test.py --model 2 --checkpoints ./checkpoints/quick_test
 ```
 and check the results in `checkpoints/quick_test/results/feature_process`.
 
-This is a coarse version of our code for preview. We will tidy up and release a finer version after the paper is accepted.
