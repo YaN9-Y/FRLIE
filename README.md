@@ -30,3 +30,15 @@ python3 test.py --model 2 --checkpoints ./checkpoints/quick_test
 ```
 and check the results in `checkpoints/quick_test/results/feature_process`.
 
+Citation
+-------------------------------------
+If you find our paper useful or used our code, please consider citing:
+```
+@INPROCEEDINGS{FRLIE,
+  author={Yang, Yang and Zhang, Yonghua and Guo, Xiaojie},
+  booktitle={ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Low-Light Image Enhancement via Feature Restoration}, 
+  year={2022},
+  pages={2440-2444},
+  doi={10.1109/ICASSP43922.2022.9747174}}
+```
